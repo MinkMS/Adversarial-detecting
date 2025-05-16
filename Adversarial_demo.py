@@ -10,7 +10,7 @@ import torchattacks
 
 # ========== CONFIG ==========
 clean_dir = r'C:\Users\Mink\OneDrive\Documents\GitHub\data\clean'
-model_path = 'resnet18-cifar10.pth'  
+model_path = r'C:\Users\Mink\OneDrive\Documents\GitHub\Adversarial-detecting\resnet18_128x128.pth'
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
 # ========== LOAD RANDOM CLEAN IMAGE ==========
