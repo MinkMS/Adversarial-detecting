@@ -8,6 +8,8 @@ import torchvision.transforms as transforms
 import torchvision.models as models
 import torchattacks
 
+# Script này dùng để so sánh các ảnh tấn công FGSM và PGD với ảnh sạch
+
 # ========== CONFIG ==========
 clean_dir = r'C:\Users\Mink\OneDrive\Documents\GitHub\data\clean'
 model_path = r'C:\Users\Mink\OneDrive\Documents\GitHub\Adversarial-detecting\resnet18_128x128.pth'
