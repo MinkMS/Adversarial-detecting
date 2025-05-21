@@ -5,6 +5,8 @@ import torchvision.transforms as transforms
 from PIL import Image
 from tqdm import tqdm
 
+# Script này dùng để upscale ảnh CIFAR-10 từ 32x32 lên 128x128 bằng bicubic
+
 # 1. Config
 output_dir = "data/clean/"
 resize_size = 128

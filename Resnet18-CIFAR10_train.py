@@ -9,8 +9,10 @@ from torchvision.models import resnet18
 from torch.utils.data import DataLoader
 from tqdm import tqdm
 
+# Script này dùng để huấn luyện ResNet18 trên CIFAR-10 với ảnh đã được upscale lên 128x128
+
 # =========================
-# 🔧 HYPERPARAMETERS
+#      HYPERPARAMETERS
 # =========================
 EPOCHS = 20
 BATCH_SIZE = 128
@@ -18,10 +20,10 @@ LEARNING_RATE = 1e-3
 SAVE_PATH = 'resnet18_128x128.pth'
 LOG_CSV = 'training_log.csv'
 DEVICE = 'cuda' if torch.cuda.is_available() else 'cpu'
-NUM_WORKERS = 2  # Nếu vẫn lỗi, thử đổi thành 0
+NUM_WORKERS = 2 
 
 # =========================
-# MAIN FUNCTION
+#      MAIN FUNCTION
 # =========================
 def main():
     # === DATA TRANSFORMS ===

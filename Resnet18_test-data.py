@@ -7,6 +7,8 @@ import torchattacks
 from PIL import Image
 from tqdm import tqdm
 
+# Script này dùng để tạo ra dataset có cấu trúc cho ảnh sạch và ảnh tấn công FGSM, PGD
+
 # ========== CONFIG ==========
 DEVICE = 'cuda' if torch.cuda.is_available() else 'cpu'
 IMG_SIZE = 128
@@ -14,7 +16,7 @@ OUTPUT_DIR = 'Adversarial-Example'
 EPS = 8 / 255
 ALPHA = 2 / 255
 PGD_STEPS = 10
-NUM_SAMPLES = 2000  # <= điều chỉnh số ảnh test để sinh, ví dụ 2000 thôi cho demo nhanh
+NUM_SAMPLES = 2000  # <= điều chỉnh số ảnh test
 
 # ========== LOAD MODEL ==========
 model = resnet18(num_classes=10)

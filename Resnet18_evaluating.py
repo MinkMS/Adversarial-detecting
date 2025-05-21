@@ -2,6 +2,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
 
+# Script này dùng để vẽ biểu đồ loss và accuracy từ file CSV
+
 # === Load CSV ===
 log_path = r"C:\Users\Mink\OneDrive\Documents\GitHub\Adversarial-detecting\training_log.csv"    # Đường dẫn đến file CSV
 df = pd.read_csv(log_path)

@@ -6,6 +6,8 @@ import torchvision.transforms as transforms
 from torchvision.models import resnet18
 import matplotlib.pyplot as plt
 
+# Script này dùng để so sánh ảnh sạch và ảnh tấn công với ảnh đã được huấn luyện ResNet18
+
 # ========= CONFIG =========
 MODEL_PATH = r'C:\Users\Mink\OneDrive\Documents\GitHub\Adversarial-detecting\resnet18_128x128.pth'
 DATA_ROOT = 'Adversarial-Example'
@@ -23,7 +25,8 @@ cifar_classes = ['airplane', 'automobile', 'bird', 'cat', 'deer',
 
 # ========= CHOOSE RANDOM IMAGE =========
 # Chọn split & attack
-split = random.choice(['clean', 'defected/fgsm', 'defected/pgd'])
+#split = random.choice(['clean', 'defected/fgsm', 'defected/pgd'])
+split = random.choice(['clean'])
 
 # Lấy class folder
 split_path = os.path.join(DATA_ROOT, split)
