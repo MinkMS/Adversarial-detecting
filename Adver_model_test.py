@@ -131,9 +131,6 @@ def main():
     show_prediction(img_pil, pred_label, true_label, filename, choice)
 
 if __name__ == "__main__":
-    torch.manual_seed(42)
-    np.random.seed(42)
-    random.seed(42)
     if DEVICE == "cuda":
         torch.backends.cudnn.benchmark = True
     print(f"Curent device: {DEVICE.upper()}")

@@ -135,4 +135,4 @@ for epoch in range(1, EPOCHS + 1):
 
 # ====== SAVE MODEL ======
 torch.save(model.state_dict(), MODEL_PATH)
-log(f"\n✅ Model saved to: {MODEL_PATH}")
+log(f"\nModel saved to: {MODEL_PATH}")
