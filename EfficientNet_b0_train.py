@@ -11,14 +11,6 @@ from tqdm import tqdm
 import pandas as pd
 from sklearn.metrics import f1_score
 
-# ====== FIX SEED ======
-def seed_all(seed=42):
-    torch.manual_seed(seed)
-    torch.cuda.manual_seed_all(seed)
-    np.random.seed(seed)
-    random.seed(seed)
-    torch.backends.cudnn.deterministic = True
-
 # ====== CONFIG ======
 DATA_DIR = r"C:\Users\Mink\OneDrive\Documents\GitHub\data\Food-101-split"
 IMG_SIZE = 512
